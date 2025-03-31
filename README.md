@@ -40,3 +40,26 @@ sudo ./nas_mount.sh --mount //<server>/<share> <local_mountpoint> --user <nas_us
 
 # To remove an existing mount configuration
 sudo ./nas_mount.sh --unmount <local_mountpoint> [--test]
+
+##Options
+###Options for --mount:
+//<server>/<share>: Network path to the share (server can be FQDN or IP).
+
+<local_mountpoint>: Local directory path where the share will be mounted.
+
+--user <nas_user>: Username for authenticating to the NAS share. (The script assumes a local user with the same name exists to determine file ownership UID/GID).
+
+--password <nas_pass>: Password for the NAS user. WARNING: Providing the password on the command line is insecure!
+
+--smb-version <ver>: (Optional) Specify the SMB protocol version (e.g., 2.1, 3.0, 3.1.1). Defaults to 3.0.
+
+--test: (Optional) Perform a dry run. Shows all actions that would be taken (creating files, running commands) without actually executing them.
+
+###Options for --unmount:
+<local_mountpoint>: The local directory path that was used as the mountpoint for the configuration you want to remove.
+
+--test: (Optional) Perform a dry run. Shows all actions that would be taken.
+
+###Help
+--help: Show the built-in help message summarizing usage and options.
+
