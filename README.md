@@ -34,7 +34,6 @@ A shell script to automate the setup and teardown of systemd `.mount` and `.auto
 
 ## Usage
 
-```bash
 # To set up a new mount
 sudo ./nas_mount.sh --mount //<server>/<share> <local_mountpoint> --user <nas_user> --password <nas_pass> [options]
 
