@@ -40,8 +40,8 @@ sudo ./nas_mount.sh --mount //<server>/<share> <local_mountpoint> --user <nas_us
 # To remove an existing mount configuration
 sudo ./nas_mount.sh --unmount <local_mountpoint> [--test]
 
-##Options
-###Options for --mount:
+## Options
+### Options for --mount:
 //<server>/<share>: Network path to the share (server can be FQDN or IP).
 
 <local_mountpoint>: Local directory path where the share will be mounted.
@@ -54,11 +54,11 @@ sudo ./nas_mount.sh --unmount <local_mountpoint> [--test]
 
 --test: (Optional) Perform a dry run. Shows all actions that would be taken (creating files, running commands) without actually executing them.
 
-###Options for --unmount:
+### Options for --unmount:
 <local_mountpoint>: The local directory path that was used as the mountpoint for the configuration you want to remove.
 
 --test: (Optional) Perform a dry run. Shows all actions that would be taken.
 
-###Help
+### Help
 --help: Show the built-in help message summarizing usage and options.
 
